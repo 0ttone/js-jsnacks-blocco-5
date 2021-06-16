@@ -48,6 +48,8 @@ var resultList = document.querySelector(".result")
 
 for (var i = 0; i < students.length; i++){
       var descrizioneUtente = prompt('Inserisci la descrizione di' + students[i].nome + ' ' + students[i].cognome + ':')
+      students[i].descrizione = descrizioneUtente
+
       for (var k in students[i] ){
             resultList.innerHTML += "<li>" + k + ':' + students[i][k] + "</li>";
 
